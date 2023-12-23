@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Adeyemi's Resume</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-cdH5K6LG5OF47rQ2Osz72PIfDrV18D0p6FpBl2zHjyuD8KKOtbc4sl5nOT+tZ5t8" crossorigin="anonymous">
+		<style>
+			@keyframes motionEffect {
+			  0% { transform: translateY(0); }
+			  50% { transform: translateY(-10px); }
+			  100% { transform: translateY(0); }
+			}
+			
+			@keyframes slideAndFade {
+				0% {
+					opacity: 0;
+					transform: translateX(-250px);	
+				}
+				100% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			.home-image img{
+				animation: slideAndFade 2.5s ease-out;
+			}
+
+			h1 strong {
+         		display: inline-block;
+          		animation: none; /* Disable animation for "Adeyemi Ogunleye" */
+			}
+
+			p strong {
+			  	display: inline-block;
+			  	animation: motionEffect 2s infinite;
+			}
+
+			.scrolly {
+          		font-size: 0.7em; /* Adjust the font size */
+          		border-width: 1px; /* Adjust the border size */
+        	}
+
+			.small-link {
+				font-size: 0.7em; 
+			}
+
+			p.black-text {
+				color: black !important;
+				text-decoration: none !important;
+			}
+
+			article.wrapper.style3 p.black-text {
+       			 text-decoration: none !important;
+   			}
+
+		  </style>
+		  <script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const devOpsElement = document.getElementById('devOpsRole');
+				setInterval(function () {
+					devOpsElement.innerText = devOpsElement.innerText === 'DevOps Engineer' ? 'Cloud Engineer' : 'DevOps Engineer';
+				}, 2000);
+			});
+		</script>
+	
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#Home">Home</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#Achievements">Achievements</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="Home" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit home-image"><img src="images/mypic.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Hello, I'm <strong>Adeyemi Ogunleye</strong>.</h1>
+							</header>
+							<p>I'm a <strong id="devOpsRole">DevOps Engineer</strong>.</p>
+							<a href="#About" class="button large scrolly"><span class="small-link">Learn about me</span></a>
+							<div class="download-section">
+								<a href="images/Senior DevOps Engineer - Adeyemi Ogunleye.pdf" class="download-button" download>Download Resume</a>
+							</div>
+							<div class="counter-number nav-item nav-link text-black-50 font-awesome font-size-16 active">couldn't read views</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<!-- About -->
+			<article id="About" class="wrapper style2">
+   				 <div class="container">
+       				 <header>
+            			<h2>Here's what you need to know about me.</h2>
+           				<p class="black-text">I'm Adeyemi Ogunleye a Cloud & Devops Engineer (specializing in AWS, Terraform & Azure Applications) with diverse IT background which includes practical 
+							experience in Cloud Native Technologies, Infrastructure as Code, Continuous Integration/Continuous Delivery pipelines, Microservice architecture, Containerization and Orchestration 
+							with Kubernetes as well as monitoring critical applications using DevOps/SRE best practices.</p>
+       				 </header>
+        			 <div class="row aln-center">
+            			<div class="col-4 col-6-medium col-12-small">
+                			<section class="box style1">
+                    			<span class="icon solid featured fa-briefcase"></span>
+                    			<h3>DevOps Engineer</h3>
+                    			<p>Landmark Technologies.</p>
+                			</section>
+            			</div>
+            			<div class="col-4 col-6-medium col-12-small">
+               				<section class="box style1">
+                    			<span class="icon solid featured fa-briefcase"></span>
+                    			<h3>Cloud Engineer</h3>
+                    			<p>Landmark Technologies.</p>
+                			</section>
+            			</div>
+            			<div class="col-4 col-6-medium col-12-small">
+                			<section class="box style1">
+                    			<span class="icon solid featured fa-briefcase"></span>
+                    			<h3>DevOps Engineer</h3>
+                    			<p>Landmark Technologies.</p>
+                		</section>
+            		</div>
+        		</div>
+        		<footer>
+            		<p>Professional Experience</p>
+            		<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+        		</footer>
+    		</div>
+		</article> 
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Here’s some projects i've worked on.</h2>
+						<p>CI/CD Pipeline projects deployed on Kubernetes, Jenkins, Docker and other AWS services.</p>
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/Netflix.jpg" alt="" /></a>
+								<h3><a href="#">Deploying a Netflix Clone Application on Kubernetes</a></h3>
+								<p>Deploying a Netflix clone Application as a docker container on Kubernetes cluster through a secure CICD pipeline using Jenkins,and 
+								other devops tool like Docker, Sonarqube, Trivy, Prometheus, Grafana, Argocd and helm for Kubernetes deployment.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<h3><a href="#">Deploying a Video to Audio Converter Microservice App on Kubernetes</a></h3>
+								<p>Deploying a python microservice app that converts video files to audio files. Microservice architecture has been very popular
+									since with big organizations. Tools used in the projects are as follow; AWS EKS, Docker, Helm, RabbitMQ, MongoDB and Postgres</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/Project3.png" alt="" /></a>
+								<h3><a href="#">Deploying a web appliacation using AWS services</a></h3>
+								<p>In Deploying my V-profile social media application I decided to use some AWS services for this project such as
+									AWS Elastic Beanstalk, S3, Amazon RDS, Amazon Elastic Cache, Amazon Active MQ, Amazon Route 53, Cloudfront. 
+									In this project, I learned alot about Elastic Beanstalk and its advantages.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								<h3><a href="#">Deploying a microservice python application</a></h3>
+								<p>More details coming soon.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/Voting-app.png" alt="" /></a>
+								<h3><a href="#">Deploying a voting application using docker</a></h3>
+								<p>Voting application to compare developers favorite language.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/Frontend.png" alt="" /></a>
+								<h3><a href="#">Deploying A Microservice E-Commerce Application As A Container</a></h3>
+								<p>In today's rapidly evolving software development landscape, the shift towards microservices architecture has become a prominent and widely embraced trend. 
+									The concept involves dismantling a monolithic application into smaller, self-contained services, providing numerous advantages such as enhanced scalability, 
+									easier maintenance, and increased agility.</p>
+							</article>
+						</div>
+					</div>
+					<footer>
+						<p>Some of my past and present projects</p>
+						<a href="#contact" class="button large scrolly">Get in touch with me</a>
+					</footer>
+				</div>
+			</article>
+			
+
+		<!-- Achievements -->
+		<article id="Achievements" class="wrapper style2">
+			<div class="container">
+				<header>
+					<h2>Here are some of my certifications.</h2>
+					<p>I have taken some certifications to validate my skills and knowledge in setting up, managing cloud infrastructure and implementing
+						DevOps practices.</p>
+				</header>
+				<div class="row aln-center">
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style1">
+							<!--<span class="icon featured fa-comments"></span>-->
+							<img src="images/AWS-DevOps.png" alt="AWS Certified DevOps Engineer Professional Badge" style="width: 100%;">
+							<h3>AWS Certified DevOps Engineer Professional</h3>
+							<p>The AWS DevOps Engineer certification validates my technical expertise in provisioning, operating and managing distributed application systems
+								on AWS platform.</p>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style1">
+							<!-- <span class="icon solid featured fa-camera-retro"></span> -->
+							<img src="images/AWS-CSAA.png" alt="AWS Certified Solutions Architect Badge" style="width: 100%;">
+							<h3>AWS Certified Solutions Architect - Associate</h3>
+							<p>The AWS Certified Solutions Architect validates my skills and knowledge in AWS technology, across a wide range of services.</p>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style1">
+							<!-- <span class="icon featured fa-thumbs-up"></span> -->
+							<img src="images/CKA.png" alt="AWS Certified Solutions Architect Badge" style="width: 100%;">
+							<h3>Certified Kubernetes Administrator</h3>
+							<p>The Certified Kubernetes Administrator (CKA) program provides assurance that I have the skills, knowledge and competency to perform the 
+								responsibilities of Kubernetes administrators</p>
+						</section>
+					</div>
+				</div>
+				<footer>
+					<!-- <p>The</p> -->
+					<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+				</footer>
+			</div>
+		</article>	
+			
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Do you want to deploy some applications?</h2>
+						<p>Get in touch with me, lets's collaborate to revolutionize your infrastructure and deployment strategies for unparalled efficiency!.</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-12">
+							<hr />
+							<h3>Find me on ...</h3>
+							<ul class="social">
+								
+								
+								<li><a href="https://www.linkedin.com/in/adeyemi-ogunleye" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="https://github.com/Adeyemiogunleye" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<!--
+								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                                <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+
+								-->
+							</ul>
+							<hr />
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: By Adeyemi</li>
+						</ul>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="./index.js"></script>
+
+	</body>
+</html>
