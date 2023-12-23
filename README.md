@@ -19,4 +19,4 @@ What is Cloud Resume Challenge? - [The Cloud Resume Challenge](https://cloudresu
 - Terraform
 
 ## Author
-- LinkedIn: [Adeyemi](https://www.linkedin.com/in/adeyemi-ogunleye-s/)
+- LinkedIn: [Adeyemi](https://www.linkedin.com/in/adeyemi-o-ogunleye/)
